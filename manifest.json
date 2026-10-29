@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Frame Extractor Pro",
+  "version": "3.0.0",
+  "description": "Aísla iframes y reproductores de video manteniendo su UI original intacta sin romper el Virtual DOM.",
+  "permissions": [
+    "contextMenus",
+    "scripting",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "luis.roquetico@gmail.cl"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
