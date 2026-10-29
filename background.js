@@ -13,8 +13,8 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === "extract-element-pro-max") {
     chrome.scripting.executeScript({
       target: { tabId: tab.id },
-      function: isolateInPlaceWithoutMoving
-    });
+      func: isolateInPlaceWithoutMoving // <-- La corrección clave para Firefox
+    }).catch(err => console.error("Frame Extractor Pro - Error de inyección:", err));
   }
 });
 

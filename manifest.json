@@ -8,12 +8,17 @@
     "scripting",
     "activeTab"
   ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "luis.roquetico@gmail.cl"
+      "id": "frame-extractor-pro@luisroque.cl",
+      "strict_min_version": "109.0"
     }
   },
   "icons": {
